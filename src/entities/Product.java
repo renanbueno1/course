@@ -23,12 +23,9 @@ public class Product {
 		the difference is that, in this one, it will remove the quantity of the product*/
 	}
 	public String toString() {
-		return name
-			   + ", $"
-			   + String.format("%.2f", price)
-			   + ", "
-			   + quantity
-			   + " units, Total: $"
-			   + String.format("%.2f", totalValueInStock());
+		return "Name: " + name
+			   + String.format("%nPrice: $%.2f%n", price)
+			   + "Total quantity: " + quantity + " units"
+			   + String.format("%nTotal price: $%.2f", totalValueInStock());
 	}
 }
